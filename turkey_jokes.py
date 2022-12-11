@@ -40,7 +40,7 @@ def send_to_channel_job():
         send_to_channel(text=sent_message, chat_id=config.turkey_chat_id)
 
 
-schedule.every().day.at("15:00").do(send_to_channel_job)
+schedule.every().day.at("15:05").do(send_to_channel_job)
 
 while True:
     schedule.run_pending()
